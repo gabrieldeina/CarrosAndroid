@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".DetalhesActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detalhes do Carro"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="179dp" />
+
+    <TextView
+        android:id="@+id/tvModelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Modelo"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/tvMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Marca"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/tvModelo"
+        app:layout_constraintStart_toStartOf="@+id/tvModelo"
+        app:layout_constraintTop_toBottomOf="@+id/tvModelo" />
+
+    <TextView
+        android:id="@+id/tvAno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ano"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/tvMarca"
+        app:layout_constraintStart_toStartOf="@+id/tvMarca"
+        app:layout_constraintTop_toBottomOf="@+id/tvMarca" />
+
+    <TextView
+        android:id="@+id/tvCor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Cor"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/tvAno"
+        app:layout_constraintStart_toStartOf="@+id/tvAno"
+        app:layout_constraintTop_toBottomOf="@+id/tvAno" />
+
+    <TextView
+        android:id="@+id/tvMotor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Motor"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/tvCor"
+        app:layout_constraintStart_toStartOf="@+id/tvCor"
+        app:layout_constraintTop_toBottomOf="@+id/tvCor" />
+
+    <TextView
+        android:id="@+id/tvCombustivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Combustível"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/tvMotor"
+        app:layout_constraintStart_toStartOf="@+id/tvMotor"
+        app:layout_constraintTop_toBottomOf="@+id/tvMotor" />
+
+    <TextView
+        android:id="@+id/tvFipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Fipe"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/tvCombustivel"
+        app:layout_constraintStart_toStartOf="@+id/tvCombustivel"
+        app:layout_constraintTop_toBottomOf="@+id/tvCombustivel" />
+</androidx.constraintlayout.widget.ConstraintLayout>
